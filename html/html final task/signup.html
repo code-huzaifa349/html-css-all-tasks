@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Contact Information</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/icon/favicon.svg">
+  <link rel="icon" type="image/png" href="./assets/icon/favicon.png">
+</head>
+<body>
+<div class="main-container">
+  <div class="signup-form">
+    <ol class="steps">
+      <li class="done">General</li>
+      <li class="active">Contact</li>
+      <li>Work</li>
+      <li>Preferences</li>
+    </ol>
+    <h1>Create your account</h1>
+    <h2>Contact information</h2>
+    <form action="./signup2.html" method="get">
+      <div class="field"><label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="03001234567" inputmode="numeric" pattern="[0-9]{10,15}" minlength="10" maxlength="15" title="Enter 10 to 15 digits, numbers only" required></div>
+      <div class="row">
+        <div class="field"><label for="country">Country</label>
+          <select name="country" id="country" required>
+            <option value="">Select country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="pak">Pakistan</option>
+            <option value="in">India</option>
+          </select></div>
+        <div class="field"><label for="language">Language</label>
+          <select name="language" id="language" required>
+            <option value="">Select language</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="zh">Chinese</option>
+          </select></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="province">Province</label>
+          <select name="province" id="province" required>
+            <option value="">Select province</option>
+            <option value="sindh">Sindh</option>
+            <option value="punjab">Punjab</option>
+            <option value="balochistan">Balochistan</option>
+            <option value="kpk">Khyber Pakhtunkhwa</option>
+          </select></div>
+        <div class="field"><label for="city">City</label>
+          <select name="city" id="city" required>
+            <option value="">Select city</option>
+            <option value="karachi">Karachi</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="peshawar">Peshawar</option>
+          </select></div>
+      </div>
+      <div class="field"><label for="contact-method">Preferred contact method</label>
+        <select name="contact-method" id="contact-method" required>
+          <option value="">Select method</option>
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+        </select></div>
+      <button type="submit">Continue</button>
+    </form>
+    <a class="back" href="./index.html">Back</a>
+  </div>
+  <script>
+    const phone=document.getElementById('phone');
+    phone.addEventListener('input',()=>{phone.value=phone.value.replace(/\D/g,'')});
+  </script>
+</div>
+</body>
+</html>

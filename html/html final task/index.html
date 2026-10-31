@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | General Information</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/icon/favicon.svg">
+  <link rel="icon" type="image/png" href="./assets/icon/favicon.png">
+</head>
+<body>
+<div class="main-container">
+  <div class="signup-form">
+    <ol class="steps">
+      <li class="active">General</li>
+      <li>Contact</li>
+      <li>Work</li>
+      <li>Preferences</li>
+    </ol>
+    <h1>Create your account</h1>
+    <h2>General information</h2>
+    <form action="./signup.html" method="get">
+      <div class="field"><label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required></div>
+      <div class="field"><label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required></div>
+      <div class="row">
+        <div class="field"><label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Min. 8 characters" minlength="8" required></div>
+        <div class="field"><label for="confirm-password">Confirm password</label>
+          <input type="password" id="confirm-password" placeholder="Repeat password" required></div>
+      </div>
+      <div class="field"><label for="dob">Date of birth</label>
+        <input type="date" id="dob" name="dob" required></div>
+      <div class="field"><label>Gender</label>
+        <div class="choice">
+          <label for="gender-male"><input type="radio" id="gender-male" name="gender" value="male" required>Male</label>
+          <label for="gender-female"><input type="radio" id="gender-female" name="gender" value="female" required>Female</label>
+        </div></div>
+      <div class="field"><label for="profile-picture">Profile picture</label>
+        <input type="file" id="profile-picture" name="profile-picture" accept="image/*"></div>
+      <button type="submit">Continue</button>
+    </form>
+    <p class="hint">Already have an account? <a href="./Login.html">Log in</a></p>
+  </div>
+  <script>
+    const p=document.getElementById('password'),c=document.getElementById('confirm-password');
+    const chk=()=>c.setCustomValidity(p.value===c.value?'':'Passwords do not match');
+    p.oninput=c.oninput=chk;
+  </script>
+</div>
+</body>
+</html>

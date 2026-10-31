@@ -1,0 +1,648 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eee;
+    color: #222;
+    font-family: Georgia, serif;
+}
+
+.page {
+    max-width: 1024px;
+    margin: 25px auto;
+    padding: 12px;
+    background: white;
+}
+
+/* Header */
+.header {
+    position: relative;
+    min-height: 100px;
+    text-align: center;
+    border-bottom: 2px solid #222;
+    padding-top: 20px;
+}
+
+.header-icons {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: relative;
+}
+
+.search-icon::after {
+    content: "";
+    width: 5px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    right: -4px;
+    bottom: -2px;
+    transform: rotate(45deg);
+}
+
+.top-links {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    font-size: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.header h1 {
+    font-size: 39px;
+    line-height: 1.1;
+    margin: 4px 0 14px;
+}
+
+.date {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    text-align: left;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.date p {
+    margin: 2px 0;
+}
+
+/* Header Buttons */
+.header-actions {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 7px;
+}
+
+.header-buttons a {
+    padding: 6px 9px;
+    background: #587c92;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.market {
+    margin: 22px 0 0;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    color: #555;
+}
+
+.market span {
+    color: #b33b3b;
+}
+
+/* Navigation */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #999;
+}
+
+.menu a {
+    color: #222;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Main Layout */
+.news {
+    display: grid;
+    grid-template-columns: minmax(0, 2.25fr) minmax(0, 1fr);
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.left,
+.right {
+    min-width: 0;
+}
+
+/* Main News */
+.main-news {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+    gap: 14px;
+}
+
+.live {
+    color: #c32635;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.main-text h2 {
+    font-size: 19px;
+    line-height: 1.15;
+    margin: 5px 0 10px;
+}
+
+.main-text p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.updates {
+    font-weight: bold;
+}
+
+.main-text hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 12px 0;
+}
+
+.main-text h4 {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+/* Air Quality Boxes */
+.air-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+}
+
+.air-item {
+    padding: 8px 3px;
+    background: #f4f0f0;
+    border-top: 3px solid #d3c83e;
+    text-align: center;
+    font-size: 9px;
+}
+
+.air-item span,
+.air-item b {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.air-item b {
+    font-size: 10px;
+}
+
+.air-item.purple {
+    border-color: #a33183;
+}
+
+.air-item.yellow {
+    border-color: #e6dc37;
+}
+
+.main-text .source {
+    font-size: 9px;
+    color: #777;
+    margin-top: 8px;
+}
+
+/* Main Image */
+.main-picture img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.caption {
+    color: #777;
+    font-size: 9px;
+    text-align: right;
+    margin: 4px 0;
+}
+
+/* Middle News */
+.middle-news {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 12px;
+    border-top: 1px solid #ddd;
+    padding-top: 14px;
+    margin-top: 12px;
+}
+
+.middle-news h3 {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+}
+
+.middle-news p {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.map-picture img {
+    display: block;
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+}
+
+.read-time {
+    color: #777;
+    font-size: 9px !important;
+    letter-spacing: 0.3px;
+}
+
+/* Bottom Headlines */
+.bottom-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #777;
+    margin-top: 14px;
+    padding: 12px 0;
+}
+
+.bottom-news article+article {
+    border-left: 1px solid #ddd;
+    padding-left: 12px;
+}
+
+.bottom-news h3 {
+    font-size: 14px;
+    line-height: 1.25;
+    margin: 0 0 8px;
+}
+
+/* Right Column */
+.right {
+    border-left: 1px solid #ddd;
+    padding-left: 14px;
+}
+
+/* Travel News */
+.travel-news img {
+    display: block;
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+.travel-news h2 {
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 12px 0 8px;
+}
+
+.travel-news p:not(.caption) {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* Small News */
+.small-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.small-news article {
+    min-width: 0;
+}
+
+.small-news article+article {
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+}
+
+.small-news img {
+    display: block;
+    width: 100%;
+    height: 82px;
+    object-fit: cover;
+}
+
+.small-news h3 {
+    font-size: 12px;
+    line-height: 1.25;
+    margin: 7px 0;
+}
+
+/* Opinion */
+.opinion {
+    border-top: 1px solid #222;
+    margin-top: 16px;
+    padding-top: 10px;
+}
+
+.opinion h4 {
+    font-size: 13px;
+    margin: 0 0 12px;
+}
+
+.opinion .author {
+    color: #777;
+    font-size: 9px;
+}
+
+.opinion h3 {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 6px 0;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+    .page {
+        margin: 10px auto;
+    }
+
+    .header h1 {
+        font-size: 33px;
+    }
+
+    .news {
+        grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .main-news {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+        gap: 10px;
+    }
+
+    .main-picture img {
+        height: 240px;
+    }
+
+    .travel-news img {
+        height: 150px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .top-links {
+        gap: 7px;
+        font-size: 7px;
+    }
+
+    .header-buttons a {
+        font-size: 8px;
+        padding: 5px 6px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        background: white;
+    }
+
+    .page {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .header {
+        min-height: auto;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-icons,
+    .top-links,
+    .header-actions,
+    .header h1,
+    .date {
+        position: static;
+        transform: none;
+    }
+
+    .header-icons {
+        justify-content: flex-start;
+        padding: 5px 0;
+    }
+
+    .top-links {
+        flex-wrap: wrap;
+        white-space: normal;
+        gap: 8px;
+        margin: 5px 0;
+        order: 1;
+    }
+
+    .header h1 {
+        font-size: 28px;
+        margin: 10px 0;
+        order: 2;
+    }
+
+    .header-actions {
+        align-items: center;
+        gap: 5px;
+        order: 3;
+    }
+
+    .header-buttons a {
+        font-size: 8px;
+        padding: 6px;
+    }
+
+    .market {
+        margin: 5px 0;
+    }
+
+    .date {
+        order: 4;
+        text-align: left;
+        margin: 8px 0;
+    }
+
+    .menu {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .news {
+        grid-template-columns: 1fr;
+    }
+
+    .main-news {
+        grid-template-columns: 1fr;
+    }
+
+    .main-text h2 {
+        font-size: 23px;
+    }
+
+    .main-picture img {
+        height: 240px;
+    }
+
+    .middle-news {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map-picture img {
+        height: 130px;
+    }
+
+    .climate {
+        grid-column: 1 / -1;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+    }
+
+    .right {
+        border-left: none;
+        border-top: 2px solid #222;
+        padding: 15px 0 0;
+    }
+
+    .travel-news img {
+        height: 220px;
+    }
+
+    .travel-news h2 {
+        font-size: 24px;
+    }
+
+    .small-news img {
+        height: 130px;
+    }
+
+    .small-news h3 {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 380px) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .top-links {
+        font-size: 8px;
+    }
+
+    .bottom-news,
+    .middle-news {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-news article+article {
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding: 10px 0 0;
+    }
+
+    .map-picture img {
+        height: 180px;
+    }
+
+    .climate {
+        grid-column: auto;
+    }
+
+    .small-news img {
+        height: 95px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/* News Links */
+.main-text a,
+.travel-news a {
+    color: #0066cc;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #023e88;
+}
+
+a:active {
+    color: #023e88;
+}
+
+/* Newspaper Fonts */
+
+/* Normal newspaper text */
+body {
+    font-family: "Libre Baskerville", Georgia, serif;
+}
+
+/* New York Times style logo */
+.header h1 {
+    font-family: "UnifrakturMaguntia", serif;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+/* News Headlines */
+.main-text h2,
+.middle-news h3,
+.bottom-news h3,
+.travel-news h2,
+.small-news h3,
+.opinion h3 {
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-weight: 700;
+}
+
+/* Navigation, dates and small labels */
+.menu a,
+.top-links,
+.date,
+.header-buttons a,
+.market,
+.live,
+.read-time,
+.caption,
+.source,
+.category,
+.author {
+    font-family: "Libre Franklin", Arial, sans-serif;
+}
