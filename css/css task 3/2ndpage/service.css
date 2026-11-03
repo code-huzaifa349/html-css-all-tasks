@@ -1,0 +1,158 @@
+
+/* Basic Settings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+
+/* Main Layout */
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+/* Services */
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+/* Service Cards */
+
+.container {
+    flex: 1;
+    min-width: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Images */
+
+.imge {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imge img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Headings */
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333333;
+}
+
+
+/* Paragraph */
+
+.para p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #64658f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4d4e75;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 520px) {
+
+    .main {
+        min-height: 100vh;
+        align-items: flex-start;
+        padding: 20px 15px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 350px;
+        flex: none;
+    }
+
+    .imge img {
+        height: 200px;
+    }
+
+}
+
+
+/* Reduce Animations */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .container,
+    button {
+        transition: none;
+    }
+
+    .container:hover {
+        transform: none;
+    }
+
+}
