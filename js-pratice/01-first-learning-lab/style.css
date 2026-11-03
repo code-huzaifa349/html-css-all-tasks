@@ -1,0 +1,177 @@
+
+/* Basic Settings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f6fb;
+    color: #1d2740;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* Header */
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 5px 0;
+    font-size: 32px;
+}
+
+.header p {
+    color: #55607d;
+}
+
+
+/* Tags */
+
+.tag {
+    color: #2d5bd9;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Profile Card and Other Cards */
+
+.profile-card,
+.card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.profile-card h2,
+.card h2 {
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.profile-card p,
+.card p {
+    color: #55607d;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 18px;
+    background-color: #2d5bd9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d2740;
+}
+
+
+/* Highlight Style */
+
+.highlight {
+    background-color: #e3e8f5;
+    border: 2px solid #2d5bd9;
+    box-shadow: 0 4px 15px rgba(45, 91, 217, 0.2);
+}
+
+
+/* Marks Input */
+
+#marksInput {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d5dbea;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+#marksInput:focus {
+    border-color: #2d5bd9;
+}
+
+
+/* Result and Data */
+
+#result,
+#dataResult {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #eef1f8;
+    color: #1d2740;
+}
+
+#dataResult {
+    white-space: pre-line;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #55607d;
+    font-size: 14px;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 520px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .profile-card,
+    .card {
+        padding: 20px;
+    }
+
+    .buttons {
+        gap: 5px;
+    }
+
+    button {
+        padding: 10px 14px;
+    }
+
+}
