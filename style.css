@@ -104,7 +104,9 @@ nav ul a {
 .nav-css {
     --accent: var(--css-color);
 }
-
+.nav-javascript {
+    --accent: var(--javascript-color);
+}
 .nav-github {
     --accent: var(--github-color);
 }
