@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Work Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/icon/favicon.svg">
+  <link rel="icon" type="image/png" href="./assets/icon/favicon.png">
+</head>
+<body>
+<div class="main-container">
+  <div class="signup-form">
+    <ol class="steps">
+      <li class="done">General</li>
+      <li class="done">Contact</li>
+      <li class="active">Work</li>
+      <li>Preferences</li>
+    </ol>
+    <h1>Create your account</h1>
+    <h2>Work experience</h2>
+    <form action="./signup3.html" method="get">
+      <div class="field"><label for="current-job-title">Current job title</label>
+        <input type="text" id="current-job-title" name="job-title" placeholder="e.g. Web Developer" required></div>
+      <div class="row">
+        <div class="field"><label for="years-of-experience">Years of experience</label>
+          <input type="number" id="years-of-experience" name="years" placeholder="e.g. 2" min="0" max="60" required></div>
+        <div class="field"><label for="employment-start-date">Employment start date</label>
+          <input type="date" id="employment-start-date" name="start-date" required></div>
+      </div>
+      <div class="field"><label for="skills">Skills</label>
+        <input type="text" id="skills" name="skills" placeholder="e.g. HTML, CSS, JavaScript" required></div>
+      <div class="field"><label for="upload-resume">Resume</label>
+        <input type="file" id="upload-resume" name="upload-resume" accept=".pdf,.doc,.docx" required></div>
+      <button type="submit">Continue</button>
+    </form>
+    <a class="back" href="./signup.html">Back</a>
+  </div>
+</div>
+</body>
+</html>

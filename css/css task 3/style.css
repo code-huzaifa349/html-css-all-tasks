@@ -1,0 +1,167 @@
+/* Colors */
+
+:root {
+    --page-bg: #f4f6fb;
+    --card-bg: #ffffff;
+    --text: #1d2740;
+    --muted: #55607d;
+    --soft-bg: #eef1f8;
+    --css-color: #355bc2;
+}
+
+
+/* Basic Settings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    max-width: 820px;
+    margin-inline: auto;
+    background: var(--page-bg);
+    color: var(--text);
+    font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Main Heading */
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* Description */
+
+.description {
+    margin: 0.5rem 0 1.5rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+
+/* Task List Card */
+
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+
+    list-style: none;
+    margin: 0;
+    padding: 1.5rem;
+
+    background: var(--card-bg);
+    border-top: 6px solid var(--css-color);
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(29, 39, 64, 0.08);
+}
+
+
+/* Task Links */
+
+.task-list li a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    padding: 1rem;
+    background: var(--soft-bg);
+    color: var(--text);
+
+    text-decoration: none;
+    font-weight: 700;
+
+    border-left: 4px solid var(--css-color);
+    border-radius: 8px;
+
+    transition: transform 0.15s, background 0.15s;
+}
+
+
+/* Link Text */
+
+.task-list span {
+    color: var(--css-color);
+    font-size: 0.9rem;
+}
+
+
+/* Hover Effect */
+
+.task-list li a:hover {
+    background: #e3e8f5;
+    transform: translateY(-4px);
+}
+
+
+/* Keyboard Focus */
+
+.task-list li a:focus-visible {
+    outline: 3px solid var(--css-color);
+    outline-offset: 3px;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 520px) {
+
+    body {
+        padding: 1.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .task-list {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+}
+
+
+/* Reduce Animations */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .task-list li a {
+        transition: none;
+    }
+
+    .task-list li a:hover {
+        transform: none;
+    }
+
+}
+/* Back Button */
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background: var(--css-color);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+    background: #244394;
+}
+
+.back-btn:focus-visible {
+    outline: 3px solid var(--css-color);
+    outline-offset: 3px;
+}

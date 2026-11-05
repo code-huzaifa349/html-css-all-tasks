@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Learning Lab</title>
+    <link rel="icon" href="./assets/hero-img/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+        <p class="tag">MY JAVASCRIPT JOURNEY</p>
+
+        <h1>JavaScript Learning Lab</h1>
+
+        <p>Learn JavaScript by practicing.</p>
+    </header>
+
+
+    <main>
+
+        <!-- Profile Card -->
+
+        <section class="profile-card" id="profileCard">
+
+            <p class="tag">DOM PRACTICE</p>
+
+            <h2 id="heading">Hello, I'm Huzaifa</h2>
+
+            <p id="description">
+                I am learning HTML, CSS and JavaScript.
+            </p>
+
+            <div class="buttons">
+
+                <button id="addBtn" type="button">
+                    Add Style
+                </button>
+
+                <button id="removeBtn" type="button">
+                    Remove Style
+                </button>
+
+                <button id="toggleBtn" type="button">
+                    Toggle Style
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Marks Checker -->
+
+        <section class="card">
+
+            <p class="tag">IF / ELSE PRACTICE</p>
+
+            <h2>Marks Checker</h2>
+
+            <p>Enter your marks to check your grade.</p>
+
+            <input
+                type="number"
+                id="marksInput"
+                placeholder="Enter your marks"
+                min="0"
+                max="100"
+            >
+
+            <button id="checkBtn" type="button">
+                Check Result
+            </button>
+
+            <p id="result" aria-live="polite">
+                Your result will appear here.
+            </p>
+
+        </section>
+
+
+        <!-- Data Type Checker -->
+
+        <section class="card">
+
+            <p class="tag">VARIABLE PRACTICE</p>
+
+            <h2>Data Type Checker</h2>
+
+            <p>Explore JavaScript variables and data types.</p>
+
+            <button id="dataBtn" type="button">
+                Show Data Types
+            </button>
+
+            <div id="dataResult" aria-live="polite"></div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Built by Huzaifa | Learning JavaScript</p>
+    </footer>
+
+</body>
+</html>
