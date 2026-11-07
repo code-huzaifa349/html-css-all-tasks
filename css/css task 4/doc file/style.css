@@ -1,0 +1,254 @@
+/* Basic page styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f9;
+    color: #263248;
+    line-height: 1.6;
+}
+
+/* Page heading */
+
+.page-header {
+    background-color: #17243b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.course-name {
+    margin: 0;
+    color: #b9c9e3;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.page-header h1 {
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+.subtitle {
+    margin: 0;
+    color: #d5deed;
+}
+
+/* Student information */
+
+.student-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 30px auto 0;
+}
+
+.student-details div {
+    min-width: 155px;
+    padding: 12px 18px;
+    background-color: #263956;
+    border: 1px solid #405675;
+    border-radius: 8px;
+}
+
+.detail-label {
+    display: block;
+    margin-bottom: 4px;
+    color: #b9c9e3;
+    font-size: 12px;
+}
+
+.student-details strong {
+    font-size: 14px;
+}
+
+/* Main content */
+
+.content {
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 25px;
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #e0e5ed;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e7edf5;
+    color: #1d4d87;
+}
+
+.section h3 {
+    margin-top: 25px;
+    color: #344761;
+}
+
+p {
+    margin-top: 8px;
+}
+
+code {
+    padding: 2px 6px;
+    background-color: #edf1f7;
+    border-radius: 4px;
+    color: #a33d26;
+}
+
+/* Box Model parts */
+
+.model-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.model-item {
+    flex: 1 1 200px;
+    padding: 15px;
+    background-color: #f5f7fb;
+    border-left: 4px solid #4778b8;
+    border-radius: 5px;
+}
+
+.model-item p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* Experiment tables */
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    margin: 12px 0 18px;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #dce3ed;
+    text-align: left;
+}
+
+th {
+    background-color: #eaf0f8;
+    color: #263f60;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafd;
+}
+
+.calculation {
+    padding: 14px 16px;
+    background-color: #f5f7fb;
+    border-left: 4px solid #4778b8;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Observations and conclusion */
+
+.observation {
+    margin-top: 15px;
+    padding: 16px;
+    background-color: #f5f7fb;
+    border-radius: 7px;
+}
+
+.observation h3 {
+    margin: 0 0 5px;
+}
+
+.observation p {
+    margin-bottom: 0;
+}
+
+.conclusion {
+    border-top: 4px solid #4778b8;
+}
+
+/* Footer */
+
+.page-footer {
+    padding: 20px;
+    background-color: #17243b;
+    color: #d5deed;
+    text-align: center;
+    font-size: 13px;
+}
+
+.page-footer p {
+    margin: 0;
+}
+
+/* Mobile screen */
+
+@media (max-width: 600px) {
+    .page-header {
+        padding: 30px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        margin: 18px auto;
+        padding: 0 12px;
+    }
+
+    .section {
+        padding: 18px;
+    }
+
+    .student-details div {
+        flex: 1 1 130px;
+    }
+}
+
+/* Print settings */
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .page-header,
+    .page-footer {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .content {
+        max-width: none;
+        margin: 15px auto;
+    }
+
+    .section {
+        break-inside: avoid;
+        box-shadow: none;
+    }
+}

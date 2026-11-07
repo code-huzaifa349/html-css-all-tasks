@@ -1,0 +1,195 @@
+
+/* Basic Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #1d2740;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+h2 {
+    margin-top: 40px;
+}
+/* row */
+.row {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Har box aur uski details */
+
+.item {
+    width: 280px;
+}
+
+/* Details ki styling */
+
+.item p {
+    line-height: 1.6;
+}
+
+
+/* 1. CONTENT-BOX 
+    Width Experiment */
+
+
+/* Box 1 */
+.box1 {
+    box-sizing: content-box;
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    border: 5px solid red;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Box 2 */
+.box2 {
+    box-sizing: content-box;
+    display: inline-block;
+    width: 150px;
+    padding: 20px;
+    border: 10px solid blue;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Box 3 */
+.box3 {
+    box-sizing: content-box;
+    display: inline-block;
+    width: 200px;
+    padding: 30px;
+    border: 5px solid green;
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+/* Height Experiment */
+
+/* Box 1 */
+.box4 {
+    box-sizing: content-box;
+    display: inline-block;
+    width: 220px;
+    height: 80px;
+    padding: 10px;
+    border: 5px solid red;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Box 2 */
+.box5 {
+    box-sizing: content-box;
+    display: inline-block;
+    width: 220px;
+    height: 100px;
+    padding: 20px;
+    border: 10px solid blue;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Box 3 */
+.box6 {
+    box-sizing: content-box;
+    display: inline-block;
+    width: 220px;
+    height: 120px;
+    padding: 30px;
+    border: 15px solid green;
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+/* 2. BORDER-BOX */
+/* Width Experiment */
+
+/* Box 1 */
+.box7 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    border: 5px solid red;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+/* Box 2 */
+.box8 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    border: 10px solid blue;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+/* Box 3 */
+.box9 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 200px;
+    padding: 30px;
+    border: 15px solid green;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+
+/* Height Experiment */
+
+/* Box 1 */
+.box10 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 220px;
+    height: 150px;
+    padding: 10px;
+    border: 5px solid red;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+/* Box 2 */
+.box11 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 220px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid blue;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+/* Box 3 */
+.box12 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 220px;
+    height: 150px;
+    padding: 30px;
+    border: 15px solid green;
+    background-color: lightgreen;
+    text-align: center;
+}
+
