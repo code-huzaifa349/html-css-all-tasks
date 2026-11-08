@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #1d2740;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1d2740;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #d5dbea;
+    font-size: 16px;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    color: #2d5bd9;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Notes */
+.note {
+    color: #55607d;
+    margin: 12px 0;
+    line-height: 1.7;
+}
+
+/* CSS Code Display */
+.css-code {
+    padding: 12px 15px;
+    background-color: #eef1f8;
+    border-left: 4px solid #2d5bd9;
+    border-radius: 6px;
+    font-family: monospace;
+    overflow-wrap: anywhere;
+}
+
+/* Demo Box */
+.demo-box {
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid #dce1ec;
+    background-color: #fafbff;
+    border-radius: 8px;
+}
+
+.demo-box p {
+    margin: 8px 0;
+}
+
+/* Descendant Combinator */
+.descendant .demo-box p {
+    color: blue;
+}
+
+/* Child Combinator */
+.child .demo-box > p {
+    color: green;
+    font-weight: bold;
+}
+
+/* Adjacent Sibling Combinator */
+.adjacent .demo-box h3 + p {
+    color: orange;
+    font-weight: bold;
+}
+
+/* General Sibling Combinator */
+.general .demo-box h3 ~ p {
+    color: purple;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #1d2740;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .demo-box {
+        padding: 14px;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-06</title>
+    <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Combinators</h1>
+        <p>Learn CSS Combinators with Examples</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>What are CSS Combinators?</h2>
+            <p>CSS combinators define relationships between selectors.</p>
+        </section>
+        <!-- Descendant -->
+
+        <section class="descendant">
+            <h2>Descendant Combinator</h2>
+            <!-- note -->
+            <b>Note</b>
+            <p class="note">
+                The Descendant Combinator selects all specified elements
+                inside a parent element, even if they are deeply nested.
+            </p>
+
+            <p class="css-code">
+                CSS: .descendant .demo-box p
+            </p>
+            <div class="demo-box">
+                <p>Direct child paragraph</p>
+                <div>
+                    <p>Nested paragraph</p>
+                </div>
+            </div>
+        </section>
+        <!-- Child -->
+        <section class="child">
+            <h2>Child Combinator</h2>
+            <p class="note">
+                The Child Combinator selects only direct children of a specified parent element.
+            </p>
+
+            <p class="css-code">
+                CSS: .child .demo-box > p
+            </p>
+
+            <div class="demo-box">
+                <p>Direct child paragraph</p>
+                <div>
+                    <p>Nested paragraph</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="adjacent">
+            <h2>Adjacent Sibling Combinator</h2>
+            <p class="note">
+                The Adjacent Sibling Combinator selects the element that immediately follows another element with the
+                same parent.
+            </p>
+
+            <p class="css-code">
+                CSS: .adjacent .demo-box h3 + p
+            </p>
+
+            <div class="demo-box">
+                <h3>Heading</h3>
+                <p>Immediate next paragraph</p>
+                <div>Some other element</div>
+                <p>Another paragraph</p>
+            </div>
+        </section>
+
+        <section class="general">
+            <h2>General Sibling Combinator</h2>
+            <p class="note">
+                The General Sibling Combinator selects all specified sibling elements that come after another element
+                with the same parent.
+            </p>
+
+            <p class="css-code">
+                CSS: .general .demo-box h3 ~ p
+            </p>
+
+            <div class="demo-box">
+                <h3>Heading</h3>
+                <p>First paragraph</p>
+                <div>Some other element</div>
+                <p>Second paragraph</p>
+                <span>Some text</span>
+                <p>Third paragraph</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Muhammad Huzaifa | SMIT Batch 12</p>
+    </footer>
+</body>
+
+</html>
