@@ -13,7 +13,7 @@
 .main-nav {
     position: fixed;
     top: 0;
-    width: 1500px;
+    width: 100%;
     max-width: 2000px;
     z-index: 999;
 }
@@ -52,17 +52,18 @@
 }
 
 aside {
-    position: sticky;
-    top: 50px;
-    left: 25px;
-    width: 200px;
+   width: 220px;
     position: sticky;
     top: 150px;
+    left: 25px;
     height: 500px;
     background-color: #0f0f0f;
-border-radius: 10px;
+    border-radius: 10px;
 }
 
+aside{
+    text-align: center;
+}
 aside h1 {
     text-align: center;
     text-transform: capitalize;
@@ -102,6 +103,7 @@ header {
 
 .navtwo {
     position: sticky;
+    top: 10px;
     background-color: antiquewhite;
     color: #0f0f0f;
     border: 1px solid;
