@@ -82,9 +82,9 @@ aside a {
 
 .main-body {
     position: absolute;
-    top: 0;
+    top: 10px;
    width: 80vw;
-    min-height: 1100px;
+   height: 180vh;
     margin: 100px 0 30px 250px;
     border: 1px solid;
     border-radius: 10px;
@@ -94,15 +94,15 @@ aside a {
 
 header {
     position: relative;
-    width: 100%;
-    min-height: 200px;
+    width: 80vw;
+    min-height: 250px;
     padding: 30px 15px;
     text-align: center;
 }
 
 .navtwo {
     position: sticky;
-    top: 10px;
+    top: 100px;
     background-color: antiquewhite;
     color: #0f0f0f;
     border: 1px solid;
