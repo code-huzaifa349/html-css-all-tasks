@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+nav {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.navbar .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #f4f4f4;
+    height: 50px;
+    padding: 10px;
+}
+.navbar ul {
+ list-style: none;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ gap: 16px;
+ padding-right: 10px;
+ 
+}
+
+li a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+main{ padding: 150px;}
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.left-container {
+    width: 800px;
+    
+}
+h1 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+}
+.btn {
+    text-align: left;
+    transition: 0.3s;
+    margin-top: 50px;
+  
+    
+}
+.btn a {
+   padding: 12px 28px;
+    color: #f4f4f4;
+    background-color: rgb(0, 0, 255);
+    display: inline-block;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 8px;
+    
+   
+}
+.btn,
+.btn a:hover {
+    transform: translateY(-10px)
+}
+.box-px {
+    width: 500px;
+    height: 400px;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    color: #f4f4f4;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: -8px 5px 5px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    box-sizing: border-box;
+
+}
+
+.box-px:hover {
+    transform: translateY(-9px);
+    box-shadow: -8px 5px 5px 1px rgba(0, 0, 0, 0.685);
+}
+.setup-cards {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    height: 200px;
+    background-color: rgba(158, 156, 156, 0.342);
+    padding: 0 50px;
+
+
+}
+.card h2{
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+    
+}
+.card p {
+    line-height: 1.6;
+}
+.jane-doe { display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ser {
+    border-radius: 20px;
+    margin-top: 20px;
+    
+
+}
+.ser h1 {
+    min-width: 600px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ser p {
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+}
+footer {
+    min-height: 50px;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f4f4f4;
+    margin: 0;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+}
+
+footer p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}

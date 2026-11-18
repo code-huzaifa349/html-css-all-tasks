@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .root-main {
+            margin: clamp(16px, 5vw, 100px) auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            /* align-items: stretch; */
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            padding: 15px;
+            border: 1px solid lightgray;
+            border-radius: 18px;
+            box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.4);
+            transition: 0.3s;
+
+
+        }
+
+        .main-container:hover {
+            transform: translateY(-9px);
+            box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.808);
+        }
+
+        .img-container {
+            height: 200px;
+            overflow: hidden;
+            border-radius: 16px;
+
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+
+        .label-container {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .labels {
+            background-color: rgb(204, 200, 200);
+            padding: 5px;
+            border-radius: 10px;
+            width: 80px;
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+
+        }
+
+        .head {
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        .head h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: rgb(13, 13, 14);
+        }
+
+        .para {
+            line-height: 1.6;
+            text-align: left;
+            font-size: 16px;
+            color: rgb(61, 58, 58);
+            margin-top: 8px;
+
+        }
+
+        .btn-root {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            width: 100px;
+            margin-top: 20px;
+            text-align: center;
+            padding: 15px;
+            background-color: rgb(20, 50, 88);
+            border-radius: 25px;
+            text-decoration: none;
+            color: aliceblue;
+            transition: 0.3s;
+
+
+        }
+
+        .btn:hover {
+            background-color: rgb(13, 35, 63);
+            transform: translateY(-4px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root-main">
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg"
+                    alt="Soothing-nature-backgrounds-2">
+
+            </div>
+            <div class="description-section">
+                <div class="label-container">
+                    <span class="labels">label 1</span>
+                    <span class="labels">label 2</span>
+                </div>
+                <div class="head">
+                    <h2>my img</h2>
+                </div>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nobis.</p>
+            </div>
+            <div class="btn-root">
+                <a class="btn"
+                    href="https://depositphotos-blog.s3.eu-west-1.amazonaws.com/uploads/2017/07/Soothing-nature-backgrounds-2.jpg">read
+                    more</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
