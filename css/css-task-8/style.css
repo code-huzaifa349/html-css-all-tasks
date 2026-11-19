@@ -156,6 +156,7 @@ footer {
     max-height: 100px;
     display: flex;
     justify-content: space-between;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.8);
     color: #f4f4f4;
     margin: 0;
@@ -173,5 +174,6 @@ footer p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 10px;
 
 }
