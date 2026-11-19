@@ -33,7 +33,9 @@ li a {
     text-decoration: none;
     color: #f4f4f4;
 }
-main{ padding: 150px;}
+main { 
+    padding: 150px;
+}
 .main-container {
     display: flex;
     justify-content: space-between;
